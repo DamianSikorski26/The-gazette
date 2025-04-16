@@ -6,6 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- header -->
@@ -16,20 +20,20 @@
         </div>
         <!-- nav links -->
         <div class="Main-nav-container">
-            <div class="wrapper">
+            <div class="wrapper flex flex-spaced-hori">
                 <!-- links -->
                 <nav class="header-nav">
-                    <a href="#" class="main-nav-links red_hover">today</a>
-                    <a href="#" class="main-nav-links red_hover">politics</a>
-                    <a href="#" class="main-nav-links red_hover">lifestyle</a>
-                    <a href="#" class="main-nav-links red_hover">travel</a>
-                    <a href="#" class="main-nav-links red_hover">health</a>
-                    <a href="#" class="main-nav-links red_hover">entertainment</a>
-                    <a href="#" class="main-nav-links red_hover">about us</a>
-                    <a href="#" class="main-nav-links red_hover">contacts</a>
+                    <a href="#" class="main-nav-links red-hover">today</a>
+                    <a href="#" class="main-nav-links red-hover">politics</a>
+                    <a href="#" class="main-nav-links red-hover">lifestyle</a>
+                    <a href="#" class="main-nav-links red-hover">travel</a>
+                    <a href="#" class="main-nav-links red-hover">health</a>
+                    <a href="#" class="main-nav-links red-hover">entertainment</a>
+                    <a href="/about-us.html" class="main-nav-links red-hover">about us</a>
+                    <a href="/contact-us.html" class="main-nav-links red-hover">contacts</a>
                 </nav>
                 <!-- magnifying glass -->
-                <div>
+                <div class="main-nav-links">
                     <a href="#" class="main-nav-links">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
@@ -64,7 +68,7 @@
                     <h1 class="main-title main-title-carousel white red-hover">
                         The latest news live
                     </h1>
-                    <a href="#" class="date date-normal red-hover white">
+                    <a href="#" class="date red-hover white">
                         March 29,2018
                     </a>
                 </div>
@@ -160,8 +164,8 @@
                     <div class="small-articel-wrapper">
                         <!-- first element -->
                         <div class="Big-main-smaller-articel-element-container">
-                            <div class="img-container img-container-square">
-                                <img src="img/blog-img/bn-2.jpg" alt="img">
+                            <div class=" img-container-today">
+                                <img src="img/blog-img/2.jpg" alt="img">
                             </div>
                             <!-- text part of the container -->
                             <div class="flex flex-spaced-vert">
@@ -184,7 +188,7 @@
                         </div>
                         <!-- second element -->
                         <div class="Big-main-smaller-articel-element-container">
-                            <div class="img-container img-container-square">
+                            <div class=" img-container-today">
                                 <img src="img/blog-img/3.jpg" alt="img">
                             </div>
                             <!-- text part of the container -->
@@ -266,7 +270,7 @@
                             </div>
                             <!-- text part of the container -->
                             <div >
-                                <a href="#" class="main-title main-title-big-article main-title-super-small red-hover" >
+                                <a href="#" class="main-title  main-title-super-small red-hover" >
                                     Eu concils reunites
                                 </a>
                                 <h3 class="date date-small">
@@ -281,7 +285,7 @@
                             </div>
                             <!-- text part of the container -->
                             <div >
-                                <a href="#" class="main-title main-title-big-article main-title-super-small red-hover" >
+                                <a href="#" class="main-title  main-title-super-small red-hover" >
                                     A new way to travel the world
                                 </a>
                                 <h3 class="date date-small">
@@ -296,7 +300,7 @@
                             </div>
                             <!-- text part of the container -->
                             <div >
-                                <a href="#" class="main-title main-title-big-article main-title-super-small red-hover" >
+                                <a href="#" class="main-title  main-title-super-small red-hover" >
                                     Why choose a bank?
                                 </a>
                                 <h3 class="date date-small">
@@ -475,93 +479,93 @@
 
         <!-- video grid section -->
         <section class="main-video-section">
-            <div class="wrapper">
+            <div class="video-grid">
                 <!-- 1st element -->
                 <div class="video-card">
-                    <div class="img-container">
+                    <div class="video-card_img-container">
                         <img src="img/blog-img/4.jpg" alt="img">
                         <i class="fa-solid fa-play"></i>
                     </div>
-                    <div class="video-card-text">
+                    <a href="#" class="video-card-text">
                         Show suspended by PBS amid misconduct allegations
-                    </div>
+                    </a>
                 </div>
                 <!-- 2nd element -->
                 <div class="video-card">
-                    <div class="img-container">
+                    <div class="video-card_img-container">
                         <img src="img/blog-img/5.jpg" alt="img">
                         <i class="fa-solid fa-play"></i>
                     </div>
-                    <div class="video-card-text">
+                    <a href="#" class="video-card-text">
                         Parents to Congress
-                    </div>
+                    </a>
                 </div>
 
                 <!-- 3rd element -->
 
                 <div class="video-card">
-                    <div class="img-container">
+                    <div class="video-card_img-container">
                         <img src="img/blog-img/6.jpg" alt="img">
                         <i class="fa-solid fa-play"></i>
                     </div>
-                    <div class="video-card-text">
+                    <a href="#" class="video-card-text">
                         Third Buy Alert for This “Millionaire Maker” Stock
-                    </div>
+                    </a>
                 </div>
                 <!-- 4th element -->
 
                 <div class="video-card">
-                    <div class="img-container">
+                    <div class="video-card_img-container">
                         <img src="img/blog-img/7.jpg" alt="img">
                         <i class="fa-solid fa-play"></i>
                     </div>
-                    <div class="video-card-text">
+                    <a href="#" class="video-card-text">
                         The Chicago Mercantile Exchange is set to begin
-                    </div>
+                    </a>
                 </div>
                 <!-- 5th element -->
 
                 <div class="video-card">
-                    <div class="img-container">
+                    <div class="video-card_img-container">
                         <img src="img/blog-img/8.jpg" alt="img">
                         <i class="fa-solid fa-play"></i>
                     </div>
-                    <div class="video-card-text">
+                    <a href="#" class="video-card-text">
                         Trading bitcoin futures
-                    </div>
+                    </a>
                 </div>
                 <!-- 6th element -->
 
                 <div class="video-card">
-                    <div class="img-container">
+                    <div class="video-card_img-container">
                         <img src="img/blog-img/9.jpg" alt="img">
                         <i class="fa-solid fa-play"></i>
                     </div>
-                    <div class="video-card-text">
+                    <a href="#" class="video-card-text">
                         Are ‘Micro-Mansions’ the Next Big Thing?
-                    </div>
+                    </a>
                 </div>
                 <!-- 7th element -->
 
                 <div class="video-card">
-                    <div class="img-container">
-                        <img src="img/blog-img/21.jpg" alt="img">
+                    <div class="video-card_img-container">
+                        <img src="img/blog-img/10.jpg" alt="img">
                         <i class="fa-solid fa-play"></i>
                     </div>
-                    <div class="video-card-text">
+                    <a href="#" class="video-card-text">
                         McKinney’s target market
-                    </div>
+                    </a>
                 </div>
                 <!-- 8th element -->
 
                 <div class="video-card">
-                    <div class="img-container">
+                    <div class="video-card_img-container">
                         <img src="img/blog-img/11.jpg" alt="img">
                         <i class="fa-solid fa-play"></i>
                     </div>
-                    <div class="video-card-text">
+                    <a href="#" class="video-card-text">
                         Australian Property Prices Remain Flat
-                    </div>
+                    </a>
                 </div>
 
             </div>
@@ -571,9 +575,10 @@
 
     <!-- footer -->
     <footer>
-        <div class="wrapper">
+        <img src="img/bg-img/4.jpg" alt="img">
+        <div class="footer-grid">
             <!-- 1 element -->
-            <nav class="footer nav">
+            <nav class="footer-nav ">
                 <h1 class="footer-nav-title">
                     Regions
                 </h1>
@@ -589,7 +594,7 @@
             </nav>
 
             <!-- 2 element -->
-            <nav class="footer nav">
+            <nav class="footer-nav ">
                 <h1 class="footer-nav-title">
                     Fashion
                 </h1>
@@ -600,7 +605,7 @@
             </nav>
 
             <!-- 3 element -->
-            <nav class="footer nav">
+            <nav class="footer-nav ">
                 <h1 class="footer-nav-title">
                     Politics
                 </h1>
@@ -611,7 +616,7 @@
             </nav>
 
             <!-- 4 element -->
-            <nav class="footer nav">
+            <nav class="footer-nav ">
                 <h1 class="footer-nav-title">
                     Featured
                 </h1>
@@ -626,7 +631,7 @@
             </nav>
 
             <!-- 5 element -->
-            <nav class="footer nav">
+            <nav class="footer-nav ">
                 <h1 class="footer-nav-title">
                     FAQ
                 </h1>
@@ -641,7 +646,7 @@
             </nav>
             
             <!-- 6 element -->
-            <nav class="footer nav">
+            <nav class="footer-nav">
                 <h1 class="footer-nav-title">
                     +More
                 </h1>

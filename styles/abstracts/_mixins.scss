@@ -1,2 +1,21 @@
-@use "variables" as v;
+@mixin min576px {
+    @media screen and (min-width:576px) {
+        @content;
+    }
+}
+@mixin min768px {
+    @media screen and (min-width:768px) {
+        @content;
+    }
+}
+@mixin min992px {
+    @media screen and (min-width:992px) {
+        @content;
+    }
+}
+@mixin min1200px {
+    @media screen and (min-width:1200px) {
+        @content;
+    }
+}
 

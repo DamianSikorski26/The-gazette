@@ -6,6 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- header -->
@@ -16,21 +20,21 @@
         </div>
         <!-- nav links -->
         <div class="Main-nav-container">
-            <div class="wrapper">
+            <div class="wrapper flex flex-spaced-hori">
                 <!-- links -->
                 <nav class="header-nav">
-                    <a href="#" class="main-nav-links red_hover">today</a>
+                    <a href="/index.html" class="main-nav-links red_hover">today</a>
                     <a href="#" class="main-nav-links red_hover">politics</a>
                     <a href="#" class="main-nav-links red_hover">lifestyle</a>
                     <a href="#" class="main-nav-links red_hover">travel</a>
                     <a href="#" class="main-nav-links red_hover">health</a>
                     <a href="#" class="main-nav-links red_hover">entertainment</a>
-                    <a href="#" class="main-nav-links red_hover">about us</a>
+                    <a href="/about-us.html" class="main-nav-links red_hover">about us</a>
                     <a href="#" class="main-nav-links red_hover">contacts</a>
                 </nav>
                 <!-- magnifying glass -->
-                <div>
-                    <a href="#" class="main-nav-links">
+                <div class="main-nav-links">
+                    <a  href="#" class="main-nav-links">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                 </div>
@@ -53,20 +57,20 @@
      <main>
         <!-- banner -->
         <section class="banner">
-            <div class="wrapper wrapper-banner">
+            <div class="wrapper flex flex-spaced-hori">
               <h1 class="main-title main-title-banner">
                 Contact
             </h1>
-            <div class="date date-banner">
+            <h1 class="date date-banner">
                 28 November 2017
-            </div>
+            </h1>
 
             </div>
         
         </section>
         <!-- adress form section -->
-        <section>
-            <div class="wrapper">
+        <section class="adress-section">
+            <div class="adress-section-grid">
                 <div class="adress-form-container adress-form-container-big">
                     <h1 class="title-bottom-underlined title-bottom-underlined-big title-bottom-underlined-bold  ">
                         Address
@@ -75,7 +79,10 @@
                         <input type="text" placeholder="Enter your Full Name">
                         <input type="email" placeholder="Email">
                         <textarea name="" id="" placeholder="Message"></textarea>
-                        <input type="submit" class="red-hover Transparent-button" value="submit >">
+                        <a class="adress-button Transparent-button" href="#">
+                            Submit
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
                     </form>
                 </div>
                 <!-- adress -->
@@ -112,9 +119,10 @@
 
     <!-- footer -->
     <footer>
-        <div class="wrapper">
+        <img src="img/bg-img/4.jpg" alt="img">
+        <div class="footer-grid">
             <!-- 1 element -->
-            <nav class="footer-nav">
+            <nav class="footer-nav ">
                 <h1 class="footer-nav-title">
                     Regions
                 </h1>
@@ -130,7 +138,7 @@
             </nav>
 
             <!-- 2 element -->
-            <nav class="footer nav">
+            <nav class="footer-nav ">
                 <h1 class="footer-nav-title">
                     Fashion
                 </h1>
@@ -141,7 +149,7 @@
             </nav>
 
             <!-- 3 element -->
-            <nav class="footer nav">
+            <nav class="footer-nav ">
                 <h1 class="footer-nav-title">
                     Politics
                 </h1>
@@ -152,7 +160,7 @@
             </nav>
 
             <!-- 4 element -->
-            <nav class="footer nav">
+            <nav class="footer-nav ">
                 <h1 class="footer-nav-title">
                     Featured
                 </h1>
@@ -167,7 +175,7 @@
             </nav>
 
             <!-- 5 element -->
-            <nav class="footer nav">
+            <nav class="footer-nav ">
                 <h1 class="footer-nav-title">
                     FAQ
                 </h1>
@@ -182,7 +190,7 @@
             </nav>
             
             <!-- 6 element -->
-            <nav class="footer nav">
+            <nav class="footer-nav">
                 <h1 class="footer-nav-title">
                     +More
                 </h1>

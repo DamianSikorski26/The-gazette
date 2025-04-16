@@ -1,0 +1,48 @@
+.adress-section{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.adress-section-grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 40px;
+    max-width: 1140px;
+    width: 80%;
+    margin: auto;
+}
+.adress-form-container{
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px
+    ;
+    &-big{
+        grid-column: span 12;
+        }
+}
+
+.adress-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    input{
+        width: 100%;
+        border: none;
+        background-color: rgb(221, 221, 221);
+        padding: 20px;
+    }
+    textarea{
+        width: 100%;
+        border: none;
+        background-color: rgb(221, 221, 221);
+        padding: 20px;
+    }
+}
+.adress-button{
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+}

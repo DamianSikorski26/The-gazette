@@ -2,17 +2,16 @@ a{
     text-decoration: none;
     color: black;
 }
-
-.white{
-    color: white;
+body{
+    font-family: 'Roboto',sans-serif;
 }
+
 
 .wrapper{
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    
 
 }
 
@@ -22,6 +21,12 @@ a{
     &-spaced-vert{
         justify-content: space-between;
         flex-direction: column;
+        align-items: start;
+
+    }
+    &-spaced-hori{
+        justify-content: space-between;
+        flex-direction: row;
         align-items: start;
 
     }
@@ -37,9 +42,14 @@ a{
     text-transform: uppercase;
     border-bottom: 1px solid rgb(158, 158, 158);
     padding-bottom: 20px;
+    font-size: 18px;
+
     
     &-big{
-
+        font-size: 20px;
+    }
+    &-bold{
+        font-weight: bold;
     }
 }
 
@@ -47,3 +57,54 @@ a{
     width: 100%;
     
 }
+.red-hover:hover{
+    transition: 0.3s all linear;
+    color: red;
+}
+
+.articel-text{
+    color: rgb(148, 148, 148);
+    font-size: 18px;
+    &-small{
+        font-size: 14px;
+    }
+    &-medium{
+        font-size: 16px;
+    }
+}
+
+.main-title{
+    font-family: "PT Serif", serif;
+    &-big-article{
+        font-size: 36px;
+    }
+    &-banner{
+        font-size: 28px;
+    }
+    &-our-card-team{
+        font-size: 24px;
+    }
+    &-extra-small{
+        font-size: 15px;
+    }
+    &-super-small{
+        font-size: 18px;
+    }
+    &-small{
+        font-size: 20px;
+    }
+}
+
+.date{
+    font-style: italic;
+    color: rgb(160, 160, 160);
+    font-size: 18px;
+    font-weight: 400;
+    &-small{
+        font-size: 14px;
+    }
+    &-banner{
+        font-size: 16px;
+    }
+}
+

@@ -1,4 +1,5 @@
 // carousel part 
+@use "../abstracts/" as *;
 
 .carousel{
     width: 100%;
@@ -41,9 +42,16 @@
 
     &-left-container{
         grid-column: span 12;
+        @include min992px{
+            grid-column: span 9;
+        }
+
     }
     &-right-container{
         grid-column: span 12;
+        @include min992px{
+            grid-column: span 3;
+        }
     }
 }
 
@@ -79,6 +87,19 @@
     flex-direction: column;
     gap: 30px;
     justify-content: space-between;
+    @include min992px{
+        flex-direction: row;
+    }
+}
+
+.img-container-today{
+   
+    aspect-ratio: 1/1;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 .Breaking-container{
     position: relative;
@@ -148,6 +169,7 @@
     padding: 50px 0;
     display: grid;
     grid-template-columns: repeat(12,1fr) ;
+    gap: 10px;
 }
 
 .second-section-container{
@@ -155,11 +177,16 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: start;
     div{
         display: flex;
         flex-direction: column;
         gap: 15px;
         padding: 15px 0;
+    }
+    @include min768px{
+        grid-column: span 2;
+
     }
 
 
@@ -167,14 +194,81 @@
 
 .second-section-container-big{
     grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
     div{
         display: flex;
         flex-direction: column;
         gap: 15px;
         padding: 15px 0;
+        width: 100%;
+    }
+    @include min768px{
+        grid-column: span 4;
+        grid-row: span 2 ;
+
     }
 }
 
 .bottom-border-grey{
     border-bottom: 1px solid rgb(173, 173, 173);
 }
+
+// section video 
+
+
+
+.main-video-section{
+    background-color: rgb(207, 207, 207);
+    padding: 30px 0;
+    width: 100%;
+    
+}
+
+.video-grid{
+    max-width: 1140px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12,1fr) ;
+    gap:15px;
+    
+}
+
+.video-card{
+    grid-column: span 12;
+    @include min768px{
+        grid-column: span 3;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        transition:.3s all linear;
+    }
+    
+    &:hover img{
+        opacity: 10%;
+    }
+}
+.video-card_img-container{
+    position: relative;
+    background-color: black;
+    margin-bottom: 20px;
+    i{
+        position: absolute;
+        top:50%;
+        left:50%;
+        translate: -50% -50%;
+        color: white;
+    }
+
+}
+
+.video-card-text{
+    margin: 15px 0;
+}
+
+
+
