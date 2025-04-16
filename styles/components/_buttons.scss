@@ -1,0 +1,56 @@
+// menu button
+
+ .header-menu-button{
+    color:white;
+    display: inline-flex;
+    background-color: red;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    &-burger{
+        width: 10px;
+        height: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        vertical-align: middle;
+        div{
+            height: 1px;
+            width: 100%;
+            background-color: white;
+        }
+     }
+    
+ }
+
+ .menu-text{
+    text-transform: uppercase;
+    display: inline-block;
+ }
+
+//  red button
+
+.red-button{
+    color: white;
+    text-transform: uppercase;
+    padding:5px;
+    background-color: red;
+    
+}
+
+
+//transparent button
+
+.Transparent-button{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: bold;
+}

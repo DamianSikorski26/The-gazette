@@ -18,7 +18,7 @@
         <div class="Main-nav-container">
             <div class="wrapper">
                 <!-- links -->
-                <nav>
+                <nav class="header-nav">
                     <a href="#" class="main-nav-links red_hover">today</a>
                     <a href="#" class="main-nav-links red_hover">politics</a>
                     <a href="#" class="main-nav-links red_hover">lifestyle</a>
@@ -41,18 +41,21 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <div>
+                    <div class="menu-text">
                         Menu
                     </div>
                 </a>
             </div>
         </div>
     </header>
+
+
+
     <main>
         <!-- carousel section -->
         <section class="carousel">
             <!-- first container -->
-            <div class="img-container">
+            <div class="carousel-container">
                 <img class="carousel-single-img" src="img/blog-img/16.jpg" alt="img">
                 <div class="carousel-single-desc">
                     <a href="#" class="red-button red-button-smaller">
@@ -67,7 +70,7 @@
                 </div>
             </div>
             <!-- second container -->
-            <div class="img-container">
+            <div class="carousel-container">
                 <img class="carousel-single-img" src="img/blog-img/7.jpg" alt="img">
                 <div class="carousel-single-desc">
                     <a href="#" class="red-button red-button-smaller">
@@ -82,7 +85,7 @@
                 </div>
             </div>
             <!-- third container -->
-            <div class="img-container">
+            <div class="carousel-container">
                 <img class="carousel-single-img" src="img/bg-img/3.jpg" alt="img">
                 <div class="carousel-single-desc">
                     <a href="#" class="red-button red-button-smaller">
@@ -104,7 +107,7 @@
                 <!-- big article container -->
                 <div class="Big-main-big-article">
                     <!-- upperpart -->
-                    <div class="Big-main-big-article-upperpart">
+                    <div class="flex flex-spaced-vert">
                         <a href="#" class="red-button">
                             Politices
                         </a>
@@ -127,10 +130,11 @@
                      <div class="Big-main-big-article-bottompart">
                         <!-- continue reading button -->
                         <a class="Transparent-button red-hover" href="#">
-                            continue reading <span>></span>
+                            continue reading 
+                            <i class="fa-solid fa-chevron-right"></i>
                         </a>
                         <!-- social icons -->
-                        <div>
+                        <div class="Big-articel-icons-container">
                             <a class="social-icon red-hover" href="#">
                                 <i class="fa-brands fa-pinterest"></i>
                             </a>
@@ -160,7 +164,7 @@
                                 <img src="img/blog-img/bn-2.jpg" alt="img">
                             </div>
                             <!-- text part of the container -->
-                            <div >
+                            <div class="flex flex-spaced-vert">
                                 <a href="#" class="red-button">
                                     news
                                 </a>
@@ -181,10 +185,10 @@
                         <!-- second element -->
                         <div class="Big-main-smaller-articel-element-container">
                             <div class="img-container img-container-square">
-                                <img src="img/bg-img/3.jpg" alt="img">
+                                <img src="img/blog-img/3.jpg" alt="img">
                             </div>
                             <!-- text part of the container -->
-                            <div >
+                            <div class="flex flex-spaced-vert">
                                 <a href="#" class="red-button">
                                     life
                                 </a>
@@ -207,7 +211,7 @@
                  </div>
             </div>
             <!-- right part of the main container -->
-            <div >
+            <div class="Big-main-right-container">
                 <!-- breaking news part -->
                 <div >
                     <!-- title -->
@@ -217,8 +221,8 @@
                     <!-- body-container -->
                     <div class="small-articel-wrapper">
                         <!-- first element -->
-                        <div class="img-container img-container-square">
-                            <img src="img/blog-img/22.jpg" alt="img">
+                        <div class="Breaking-container">
+                            <img src="img/blog-img/bn-1.jpg" alt="img">
                             <div class="top-breaking-div-container">
                                 <div class="top-breaking-div">
                                     Breaking news
@@ -231,7 +235,7 @@
                         
 
                         <!-- second element -->
-                        <div class="img-container img-container-square">
+                        <div class="Breaking-container">
                             <img src="img/blog-img/bn-2.jpg" alt="img">
                             <div class="top-breaking-div-container">
                                 <div class="top-breaking-div">
@@ -256,9 +260,9 @@
                     <!-- body-container -->
                     <div class="small-articel-wrapper">
                         <!-- first element -->
-                        <div class="flex-container">
-                            <div class="img-container img-container-square">
-                                <img src="img/blog-img/15.jpg" alt="img">
+                        <div class="flex">
+                            <div >
+                                <img src="img/blog-img/dm-1.jpg" alt="img">
                             </div>
                             <!-- text part of the container -->
                             <div >
@@ -271,9 +275,9 @@
                             </div>
                         </div>
                         <!-- second element -->
-                        <div class="flex-container">
-                            <div class="img-container img-container-square">
-                                <img src="img/blog-img/8.jpg" alt="img">
+                        <div class="flex">
+                            <div >
+                                <img src="img/blog-img/dm-2.jpg" alt="img">
                             </div>
                             <!-- text part of the container -->
                             <div >
@@ -286,8 +290,8 @@
                             </div>
                         </div>
                         <!-- third element -->
-                        <div class="flex-container">
-                            <div class="img-container img-container-square">
+                        <div class="flex">
+                            <div class=>
                                 <img src="img/blog-img/dm-3.jpg" alt="img">
                             </div>
                             <!-- text part of the container -->
@@ -313,7 +317,7 @@
                     <div class="small-articel-wrapper">
                        <form action="" class="main-page-subscribe-form">
                         <input type="email" placeholder="Your Email">
-                        <input type="submit" placeholder="Subscribe">
+                        <input type="submit" class="red-button" value="Subscribe">
                        </form>
                     </div>
                 </div>

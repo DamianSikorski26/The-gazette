@@ -1,1 +1,49 @@
+a{
+    text-decoration: none;
+    color: black;
+}
 
+.white{
+    color: white;
+}
+
+.wrapper{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
+
+}
+
+.flex{
+    display: flex;
+    gap: 10px;
+    &-spaced-vert{
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: start;
+
+    }
+    &-hori{
+        justify-content: start;
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
+
+.title-bottom-underlined{
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(158, 158, 158);
+    padding-bottom: 20px;
+    
+    &-big{
+
+    }
+}
+
+.img-container-square{
+    width: 100%;
+    
+}

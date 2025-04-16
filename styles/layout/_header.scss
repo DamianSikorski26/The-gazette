@@ -1,0 +1,24 @@
+header{
+    width: 100%;
+}
+
+.Nav-main-logo{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.Main-nav-container{
+    width: 100%;
+    border-top: 1px solid lightgray;
+    .wrapper{
+        padding:15px 0;
+    }
+}
+
+.header-nav{
+    display: none;
+}
+
+.main-nav-links{
+    display: none;
+}
+
