@@ -60,6 +60,7 @@ body{
 .red-hover:hover{
     transition: 0.3s all linear;
     color: red;
+    border-color: red;
 }
 
 .articel-text{
@@ -75,6 +76,7 @@ body{
 
 .main-title{
     font-family: "PT Serif", serif;
+    font-weight: 400;
     &-big-article{
         font-size: 36px;
     }
@@ -108,3 +110,7 @@ body{
     }
 }
 
+.social-icon{
+    color: grey;
+    font-size: 16px;
+}

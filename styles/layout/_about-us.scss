@@ -1,8 +1,13 @@
+@use "../abstracts/" as *;
+
 .sort_history-grid{
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
     margin:20px 0;
+    @include min768px{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 // our team 
@@ -15,6 +20,10 @@
 }
 .our-team-card{
     grid-column: span 6;
+    
+    @include min992px{
+        grid-column: span 3;
+    }
     img{
         width: 100%;
     }
